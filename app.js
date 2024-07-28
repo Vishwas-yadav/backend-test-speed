@@ -15,10 +15,10 @@ const userRouter=require('./modules/user/index');
 const adminRouter=require('./modules/admin/index');
 const locationRouter=require('./modules/location/index');
 
-app.use('/user',userRouter);
-app.use('/admin',adminRouter);
-app.use('/loc',locationRouter);
-app.get('/dummy', (req, res) => {
+app.use('/api/user',userRouter);
+app.use('/api/admin',adminRouter);
+app.use('/api/loc',locationRouter);
+app.get('/api/dummy', (req, res) => {
   res.send('Hello World!');
 });
 
